@@ -1,22 +1,25 @@
 <script setup lang="ts">
 import $ from 'jquery'
+import { onMounted } from 'vue';
 
-$(document).ready(function () {
-  $('.category-tab').on('click', function () {
-    const filter = $(this).data('filter');
+onMounted(() => {
+  $(document).ready(function () {
+    $('.category-tab').on('click', function () {
+      const filter = $(this).data('filter');
 
-    // Update button state
-    $('.category-tab').removeClass('active');
-    $(this).addClass('active');
+      // Update button state
+      $('.category-tab').removeClass('active');
+      $(this).addClass('active');
 
-    // Filter logic
-    if (filter === 'all') {
-      $('.blog-item').fadeIn(400);
-    } else {
-      $('.blog-item').hide();
-      $(`.blog-item.${filter}`).fadeIn(400);
-    }
-  });
+      // Filter logic
+      if (filter === 'all') {
+        $('.blog-item').fadeIn(400);
+      } else {
+        $('.blog-item').hide();
+        $(`.blog-item.${filter}`).fadeIn(400);
+      }
+    });
+  })
 })
 
 </script>

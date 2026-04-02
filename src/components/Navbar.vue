@@ -24,20 +24,25 @@
 
         <div class="relative group dropdown">
           <button class="nav-link font-medium hover:text-secondary flex items-center">
-            Profil <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            Tentang <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
             </svg>
           </button>
           <div class="dropdown-menu absolute hidden pt-4 w-48">
             <div class="bg-white text-primary rounded-lg shadow-xl overflow-hidden py-2 border-t-4 border-secondary">
-              <a href="#about" class="block px-4 py-2 hover:bg-accent transition">Tentang Kami</a>
-              <a href="#" class="block px-4 py-2 hover:bg-accent transition">Visi & Misi</a>
+              <router-link to="/sekilas" class="block px-4 py-2 hover:bg-accent transition">Sekolas</router-link>
+              <router-link to="/tahfizh-quran" class="block px-4 py-2 hover:bg-accent transition">Tahfizh
+                Quran</router-link>
+              <router-link to="/fasilitas" class="block px-4 py-2 hover:bg-accent transition">Fasilitas</router-link>
+              <router-link to="/extrakurikuler"
+                class="block px-4 py-2 hover:bg-accent transition">Extrakurikuler</router-link>
             </div>
           </div>
         </div>
 
-        <a href="#fasilitas" class="nav-link font-medium hover:text-secondary transition">Fasilitas</a>
-        <a href="#kegiatan" class="nav-link font-medium hover:text-secondary transition">Kegiatan</a>
+        <router-link to="/alumni" class="nav-link font-medium hover:text-secondary transition">Alumni</router-link>
+        <router-link to="/kemadirian"
+          class="nav-link font-medium hover:text-secondary transition">Kemandirian</router-link>
         <router-link to="/blogs" class="nav-link font-medium hover:text-secondary transition">Blog</router-link>
 
         <!-- Language Toggle -->
@@ -75,11 +80,17 @@
       </button>
 
       <nav class="flex flex-col space-y-6 text-center">
-        <a href="#" class="text-2xl font-serif text-white hover:text-secondary transition">Beranda</a>
-        <a href="#about" class="text-2xl font-serif text-white hover:text-secondary transition">Tentang Kami</a>
-        <a href="#fasilitas" class="text-2xl font-serif text-white hover:text-secondary transition">Fasilitas</a>
-        <a href="#kegiatan" class="text-2xl font-serif text-white hover:text-secondary transition">Kegiatan</a>
-        <a href="#blog" class="text-2xl font-serif text-white hover:text-secondary transition">Berita</a>
+        <router-link to="/" class="text-2xl font-serif text-white hover:text-secondary transition">Beranda</router-link>
+        <router-link to="/sekilas" class="text-2xl font-serif text-white hover:text-secondary transition">Tentang
+          Kami</router-link>
+        <router-link to="/alumni"
+          class="text-2xl font-serif text-white hover:text-secondary transition">Fasilitas</router-link>
+        <router-link to="/tahfizh-quran" class="text-2xl font-serif text-white hover:text-secondary transition">Tahfizh
+          Quran</router-link>
+        <router-link to="/kemandirian"
+          class="text-2xl font-serif text-white hover:text-secondary transition">Kemandirian</router-link>
+        <router-link to="/blogs"
+          class="text-2xl font-serif text-white hover:text-secondary transition">Blogs</router-link>
 
         <div class="pt-6 border-t border-white/10 flex justify-center space-x-6">
           <button class="text-secondary font-bold">INDONESIA</button>
