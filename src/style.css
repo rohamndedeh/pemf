@@ -53,3 +53,13 @@
 #mobile-menu.active {
   transform: translateX(0);
 }
+
+.router-link-active {
+  color: #fbbf24; /* Warna secondary kamu */
+  opacity: 1;
+  font-weight: bold;
+  border-bottom: 2px solid #fbbf24;
+}
+
+/* 'qHN&rB4cZX.+Ms8'
+sb_publishable_agAi1S27UwUFvYIPYTN78w_UvstZyXv */

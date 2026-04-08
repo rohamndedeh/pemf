@@ -8,6 +8,11 @@ import TahfizhPage from '../views/TahfizhPage.vue'
 import SekilasPage from '../views/SekilasPage.vue'
 import ExtrakurikulerPage from '../views/ExtrakurikulerPage.vue'
 import MandiriPage from '../views/MandiriPage.vue'
+import LoginPage from '../views/LoginPage.vue'
+import RegisterPage from '../views/RegisterPage.vue'
+import DashboardPage from '../views/admin/DashboardPage.vue'
+import AdminLayout from '../layouts/AdminLayout.vue'
+import { supabase } from '../utils/supabase'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -101,7 +106,67 @@ const router = createRouter({
           'Berbagai kegiatan ekstrakurikuler yang tersedia di pondok pesantren kami untuk mendukung pengembangan bakat dan minat santri.',
       },
     },
+    {
+      path: '/login',
+      name: 'Login',
+      component: LoginPage,
+      meta: {
+        title: 'Login',
+        description: 'Masuk ke akun Anda di pondok pesantren kami.',
+        hideNavigation: true,
+      },
+    },
+    {
+      path: '/register',
+      name: 'Register',
+      component: RegisterPage,
+      meta: {
+        title: 'Register',
+        description: 'Buat akun baru di pondok pesantren kami.',
+        hideNavigation: true,
+      },
+    },
+    {
+      path: '/admin',
+      name: 'Admin',
+      component: AdminLayout,
+      meta: {
+        title: 'Dashboard',
+        description: 'Halaman utama setelah login.',
+        hideNavigation: true,
+        requiresAuth: true,
+      },
+      children: [
+        {
+          path: 'dashboard',
+          name: 'Dashboard Admin',
+          component: DashboardPage,
+          meta: { title: 'Ringkasan Koperasi' },
+        },
+      ],
+    },
   ],
+})
+
+router.beforeEach(async (to, from, next) => {
+  // 1. Ambil session aktif dari Supabase
+  const { data } = await supabase.auth.getSession()
+  const isLoggedIn = !!data.session
+
+  // 2. Jika rute butuh login tapi user BELUM login
+  if (to.meta.requiresAuth && !isLoggedIn) {
+    // Tendang balik ke halaman login
+    next('/login')
+  }
+  // 3. Jika user SUDAH login tapi mau buka halaman login lagi
+  else if (to.path === '/login' && isLoggedIn) {
+    // Arahkan langsung ke dashboard admin
+    next('/admin/dashboard')
+  }
+  // 4. Selain itu, izinkan jalan terus
+  else {
+    next()
+  }
 })
 
 export default router
