@@ -41,7 +41,7 @@
         </div>
 
         <router-link to="/alumni" class="nav-link font-medium hover:text-secondary transition">Alumni</router-link>
-        <router-link to="/kemadirian"
+        <router-link to="/kemandirian"
           class="nav-link font-medium hover:text-secondary transition">Kemandirian</router-link>
         <router-link to="/blogs" class="nav-link font-medium hover:text-secondary transition">Blog</router-link>
         <router-link to="/kontak" class="nav-link font-medium hover:text-secondary transition">Kontak</router-link>
