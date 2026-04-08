@@ -2,7 +2,7 @@
 </script>
 
 <template>
-  <nav class="fixed top-0 w-full z-50 sticky-nav border-b border-secondary/20 text-white">
+  <nav class="fixed top-0 w-full z-50 sticky-nav border-b-2 border-secondary/20 text-white">
     <div class="container mx-auto px-4 py-3 flex items-center justify-between">
       <!-- Logo -->
       <div class="flex items-center space-x-3">
@@ -44,6 +44,7 @@
         <router-link to="/kemadirian"
           class="nav-link font-medium hover:text-secondary transition">Kemandirian</router-link>
         <router-link to="/blogs" class="nav-link font-medium hover:text-secondary transition">Blog</router-link>
+        <router-link to="/kontak" class="nav-link font-medium hover:text-secondary transition">Kontak</router-link>
 
         <!-- Language Toggle -->
         <div class="flex items-center space-x-2 bg-primary/50 px-3 py-1 rounded-full border border-secondary/30">
