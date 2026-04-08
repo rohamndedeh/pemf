@@ -141,32 +141,32 @@ const router = createRouter({
           path: 'dashboard',
           name: 'Dashboard Admin',
           component: DashboardPage,
-          meta: { title: 'Ringkasan Koperasi' },
+          meta: { title: 'Dashboard Admin' },
         },
       ],
     },
   ],
 })
 
-router.beforeEach(async (to, from, next) => {
-  // 1. Ambil session aktif dari Supabase
+router.beforeEach(async (to, from) => {
   const { data } = await supabase.auth.getSession()
   const isLoggedIn = !!data.session
 
-  // 2. Jika rute butuh login tapi user BELUM login
+  // 1. Jika rute butuh login tapi user BELUM login
   if (to.meta.requiresAuth && !isLoggedIn) {
-    // Tendang balik ke halaman login
-    next('/login')
+    // Kembalikan objek lokasi untuk redirect (seperti 'return' di fungsi biasa)
+    return { name: 'Login' }
   }
-  // 3. Jika user SUDAH login tapi mau buka halaman login lagi
-  else if (to.path === '/login' && isLoggedIn) {
-    // Arahkan langsung ke dashboard admin
-    next('/admin/dashboard')
+
+  // 2. Jika user SUDAH login tapi mau buka halaman login lagi
+  if (to.path === '/login' && isLoggedIn) {
+    // Kembalikan arah ke dashboard admin
+    return { path: '/admin/dashboard' }
   }
-  // 4. Selain itu, izinkan jalan terus
-  else {
-    next()
-  }
+
+  // 3. Jika tidak ada masalah, jangan return apa-apa (atau return true)
+  // Ini sama dengan memanggil next() di versi lama
+  return true
 })
 
 export default router

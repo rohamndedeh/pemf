@@ -26,6 +26,56 @@ onMounted(() => {
       $('#overlay').toggleClass('hidden');
       $('body').toggleClass('overflow-hidden');
     });
+
+    // Handle Sidebar Link Active State
+    $('.sidebar-link').on('click', function (e) {
+      // Jangan cegah default jika ada tautan asli, tapi untuk demo kita aktifkan class
+      $('.sidebar-link').removeClass('active').addClass('text-white/70');
+      $(this).addClass('active').removeClass('text-white/70');
+    });
+
+    // Notification Button Click
+    $('#notif-btn').on('click', function () {
+      $('#notif-dot').fadeOut();
+      // Opsional: Tampilkan dropdown notifikasi di sini
+      console.log("Notifikasi dibuka");
+    });
+
+    // Clear Log Activity
+    $('#clear-logs').on('click', function () {
+      $('#activity-log-container').fadeOut(300, function () {
+        $(this).empty().fadeIn();
+      });
+    });
+
+    // Function to add new activity log
+    function addActivityLog(title, desc, type = 'secondary') {
+      const colorClass = type === 'primary' ? 'bg-primary' : (type === 'secondary' ? 'bg-secondary' : 'bg-slate-300');
+      const logHtml = `
+                    <div class="flex gap-4 relative new-log">
+                        <div class="w-1.5 h-1.5 rounded-full ${colorClass} mt-1.5 flex-shrink-0 z-10"></div>
+                        <div class="absolute left-[2px] top-4 bottom-0 w-[1px] bg-slate-100"></div>
+                        <div>
+                            <p class="text-xs font-bold text-primary">${title}</p>
+                            <p class="text-[10px] text-slate-400 mt-1 leading-relaxed">${desc}</p>
+                            <span class="text-[9px] text-slate-300 mt-2 block italic">Baru saja</span>
+                        </div>
+                    </div>
+                `;
+      $('#activity-log-container').prepend(logHtml);
+      $('#notif-dot').fadeIn(); // Tampilkan titik merah di bell
+    }
+
+    // Simulasi log otomatis setiap beberapa detik (opsional) atau via tombol
+    $('#simulate-log').on('click', function () {
+      const logs = [
+        { title: "Pembayaran SPP", desc: "Santri Ali bin Abi Thalib telah melunasi SPP bulan Mei.", type: "secondary" },
+        { title: "Input Nilai", desc: "Ustadzah Fatimah memperbarui nilai Tahfidz Kelas 10-A.", type: "primary" },
+        { title: "Login Terdeteksi", desc: "Perangkat baru masuk ke akun Admin Fauzan.", type: "neutral" }
+      ];
+      const randomLog = logs[Math.floor(Math.random() * logs.length)];
+      addActivityLog(randomLog.title, randomLog.randomLog || randomLog.desc, randomLog.type);
+    });
   });
 })
 </script>
@@ -141,7 +191,7 @@ onMounted(() => {
                   d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
               </svg>
             </div>
-            <button class="relative p-2 text-slate-400 hover:text-primary transition">
+            <button class="relative p-2 text-slate-400 hover:text-primary transition" id="notif-btn">
               <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                   d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9">
@@ -156,6 +206,57 @@ onMounted(() => {
 
         <router-view />
       </main>
+
+      <div class="bg-white rounded-2xl custom-shadow p-6 hidden flex flex-col h-full">
+        <div class="flex items-center justify-between mb-6 border-b border-slate-100 pb-2">
+          <h3
+            class="font-bold text-primary uppercase text-xs tracking-widest border-b-2 border-secondary inline-block pb-1">
+            Log Aktivitas</h3>
+          <button class="text-[10px] text-slate-400 hover:text-primary" id="clear-logs">Bersihkan</button>
+        </div>
+
+        <div class="log-scroll space-y-6 flex-grow pr-2 text-left" id="activity-log-container">
+          <!-- Contoh Log 1 -->
+          <div class="flex gap-4 relative">
+            <div class="w-1.5 h-1.5 rounded-full bg-secondary mt-1.5 flex-shrink-0 z-10"></div>
+            <div class="absolute left-[2px] top-4 bottom-0 w-[1px] bg-slate-100"></div>
+            <div>
+              <p class="text-xs font-bold text-primary">Pendaftaran Baru</p>
+              <p class="text-[10px] text-slate-400 mt-1 leading-relaxed">Calon santri: Budi Santoso melakukan
+                pendaftaran online melalui portal mandiri.</p>
+              <span class="text-[9px] text-slate-300 mt-2 block italic">Baru saja</span>
+            </div>
+          </div>
+
+          <!-- Contoh Log 2 -->
+          <div class="flex gap-4 relative">
+            <div class="w-1.5 h-1.5 rounded-full bg-primary mt-1.5 flex-shrink-0 z-10"></div>
+            <div class="absolute left-[2px] top-4 bottom-0 w-[1px] bg-slate-100"></div>
+            <div>
+              <p class="text-xs font-bold text-primary">Update Warta</p>
+              <p class="text-[10px] text-slate-400 mt-1 leading-relaxed">Admin Fauzan menerbitkan artikel "Adab
+                Mendahului Ilmu" di kolom Kata Ustadz.</p>
+              <span class="text-[9px] text-slate-300 mt-2 block italic">2 jam yang lalu</span>
+            </div>
+          </div>
+
+          <!-- Contoh Log 3 -->
+          <div class="flex gap-4 relative">
+            <div class="w-1.5 h-1.5 rounded-full bg-slate-300 mt-1.5 flex-shrink-0 z-10"></div>
+            <div>
+              <p class="text-xs font-bold text-primary">Sistem Backup</p>
+              <p class="text-[10px] text-slate-400 mt-1 leading-relaxed">Pencadangan basis data otomatis mingguan
+                berhasil diselesaikan.</p>
+              <span class="text-[9px] text-slate-300 mt-2 block italic">Kemarin, 03:00</span>
+            </div>
+          </div>
+        </div>
+
+        <button id="simulate-log"
+          class="mt-6 text-[10px] font-bold text-white bg-primary/10 text-primary py-2 rounded hover:bg-primary hover:text-white transition uppercase tracking-widest">
+          Simulasi Log Masuk
+        </button>
+      </div>
     </div>
   </div>
 </template>
@@ -182,5 +283,36 @@ onMounted(() => {
   #sidebar.open {
     transform: translateX(0);
   }
+}
+
+/* Animasi untuk notifikasi baru */
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.new-log {
+  animation: slideIn 0.5s ease forwards;
+}
+
+.log-scroll {
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+.log-scroll::-webkit-scrollbar {
+  width: 4px;
+}
+
+.log-scroll::-webkit-scrollbar-thumb {
+  background: #d4af37;
+  border-radius: 10px;
 }
 </style>
