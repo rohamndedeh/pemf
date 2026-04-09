@@ -20,37 +20,37 @@
             <div class="swiper-wrapper">
                 <div class="swiper-slide w-80">
                     <div class="rounded-2xl overflow-hidden bg-white/5 border border-white/10 group">
-                        <img src="https://images.unsplash.com/photo-1590073242678-70ee3fc28e84?auto=format&fit=crop&q=80&w=600" class="w-full h-64 object-cover">
+                        <img src="/foto/10.jpg" class="w-full h-64 object-cover">
                         <div class="p-6">
-                            <span class="text-secondary text-xs font-bold uppercase">04:30 AM</span>
+                            <span class="text-secondary text-xs font-bold uppercase"></span>
                             <h3 class="text-lg font-bold mt-2">Shalat Tahajud & Subuh Berjamaah</h3>
                         </div>
                     </div>
                 </div>
                 <div class="swiper-slide w-80">
                     <div class="rounded-2xl overflow-hidden bg-white/5 border border-white/10 group">
-                        <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&q=80&w=600" class="w-full h-64 object-cover">
+                        <img src="/foto/11.jpg" class="w-full h-64 object-cover">
                         <div class="p-6">
-                            <span class="text-secondary text-xs font-bold uppercase">08:00 AM</span>
-                            <h3 class="text-lg font-bold mt-2">KBM Formal Kurikulum Diknas</h3>
+                            <span class="text-secondary text-xs font-bold uppercase"></span>
+                            <h3 class="text-lg font-bold mt-2">Kajian Subuh</h3>
                         </div>
                     </div>
                 </div>
                 <div class="swiper-slide w-80">
                     <div class="rounded-2xl overflow-hidden bg-white/5 border border-white/10 group">
-                        <img src="https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?auto=format&fit=crop&q=80&w=600" class="w-full h-64 object-cover">
+                        <img src="/foto/12.jpg" class="w-full h-64 object-cover">
                         <div class="p-6">
-                            <span class="text-secondary text-xs font-bold uppercase">04:00 PM</span>
-                            <h3 class="text-lg font-bold mt-2">Ekstrakurikuler Memanah & Berkuda</h3>
+                            <span class="text-secondary text-xs font-bold uppercase"></span>
+                            <h3 class="text-lg font-bold mt-2">Kerja Bakti</h3>
                         </div>
                     </div>
                 </div>
                 <div class="swiper-slide w-80">
                     <div class="rounded-2xl overflow-hidden bg-white/5 border border-white/10 group">
-                        <img src="https://images.unsplash.com/photo-1585829365234-78bc09e05730?auto=format&fit=crop&q=80&w=600" class="w-full h-64 object-cover">
+                        <img src="/foto/13.jpg" class="w-full h-64 object-cover">
                         <div class="p-6">
-                            <span class="text-secondary text-xs font-bold uppercase">07:00 PM</span>
-                            <h3 class="text-lg font-bold mt-2">Tahfidz & Muraja'ah Al-Qur'an</h3>
+                            <span class="text-secondary text-xs font-bold uppercase"></span>
+                            <h3 class="text-lg font-bold mt-2">Olahraga Pagi</h3>
                         </div>
                     </div>
                 </div>

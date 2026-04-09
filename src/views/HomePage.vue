@@ -6,6 +6,8 @@ import Guru from '@/components/Guru.vue';
 import Hero from '@/components/Hero.vue';
 
 import $ from 'jquery'
+
+
 import { onMounted } from 'vue';
 onMounted(() => {
 
