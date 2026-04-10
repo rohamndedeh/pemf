@@ -49,12 +49,12 @@ const router = createRouter({
     },
     {
       path: '/fasilitas',
-      name: 'Fasilitas',
+      name: 'Bahasa Arab',
       component: FasilitasPage,
       meta: {
-        title: 'Fasilitas di Pondok Pesantren Al-Muhajirin',
+        title: 'Program Bahasa Arab di Pondok Pesantren Al-Muhajirin',
         description:
-          'Jelajahi fasilitas yang tersedia di pondok pesantren kami untuk mendukung proses belajar dan beribadah santri.',
+          'Jelajahi program bahasa Arab yang tersedia di pondok pesantren kami untuk mendukung proses belajar santri.',
       },
     },
     {
@@ -98,12 +98,12 @@ const router = createRouter({
     },
     {
       path: '/extrakurikuler',
-      name: 'Exakurikuler',
+      name: 'Entrepreneurship',
       component: ExtrakurikulerPage,
       meta: {
-        title: 'Extrakurikuler',
+        title: 'Entrepreneurship',
         description:
-          'Berbagai kegiatan ekstrakurikuler yang tersedia di pondok pesantren kami untuk mendukung pengembangan bakat dan minat santri.',
+          'Program entrepreneurship di pondok pesantren kami untuk membantu santri mengembangkan keterampilan dan sikap kewirausahaan.',
       },
     },
     {

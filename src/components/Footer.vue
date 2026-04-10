@@ -5,8 +5,11 @@
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
                 <div>
                     <div class="flex items-center space-x-3 mb-6 ">
-                        <div class="w-8 h-8 bg-secondary rounded-full flex items-center justify-center text-primary font-bold text-sm">AH</div>
-                        <h2 class="text-lg font-bold text-white tracking-wider">YAYASAN PESANTREN ENTREPRENEUR MIFTAHUL FALAH</h2>
+                      <div
+          class="w-10 h-10 md:w-12 md:h-12 bg-secondary rounded-full flex items-center justify-center text-primary font-bold text-lg md:text-xl">
+          <img src="/logo.jpg" class="rounded-full" alt="">
+        </div>
+                        <h2 class="text-lg font-bold text-white tracking-wider">YAYASAN PENDIDIKAN <br> MIFTAHUL FALAH</h2>
                     </div>
                     <p class="text-xs leading-relaxed">Cibadak, Sukamahi, Sukaresmi, Cianjur, Jawa Barat<br>Email: info@miftahulfalah.id<br>WA : 081546483008 ( Ustadz Susanto) <br> WA : 088809762930 (ustadz Dedeng Wiraha)</p>
                 </div>
@@ -27,7 +30,7 @@
                 </div>
             </div>
             <div class="mt-12 pt-8 border-t border-white/5 text-center text-[10px]">
-                &copy; 2025 Yayasan Pesantren Entrepreneur Miftahul Falah. All Rights Reserved.
+                &copy; 2025 Yayasan Pendidikan Miftahul Falah. All Rights Reserved.
             </div>
         </div>
     </footer>

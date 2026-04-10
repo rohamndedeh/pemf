@@ -25,13 +25,16 @@ import Header from '../components/Header.vue';
             </div>
           </div>
           <div class="w-full lg:w-1/2">
+
             <h4 class="text-secondary font-bold tracking-widest uppercase text-xs mb-2">Tentang Kami</h4>
             <h2 class="text-2xl md:text-4xl font-serif text-primary mb-6">Sejarah & Filosofi Al-Hikmah</h2>
             <p class="text-slate-600 text-sm md:text-base mb-6 leading-relaxed">
-              Pesantren Entrepreneur Miftahul Falah adalah lembaga pesantren yang tidak hanya fokus pada pendidikan
+              Yayasan Pendidikan
+              Miftahul Falah adalah lembaga pesantren yang tidak hanya fokus pada pendidikan
               berbasis agama saja, tapi juga berfokus pada pengembangan diri para santri dalam hal kepribadian, akhlaq
               dan juga jiwa kemandirian para santri. <br><br>
-              Pesantren Entrepreneur Miftahul Falah terletak di area perbukitan Cianjur, di lingkungan yang memiliki
+              Yayasan Pendidikan
+              Miftahul Falah terletak di area perbukitan Cianjur, di lingkungan yang memiliki
               udara yang masih segar dan jauh dari keramaian sehingga kondisi yang demikian sangat mendukung bagi proses
               belajar dan pengembangan diri anak. <br><br>
               Selain itu metoda pembelajaran yang diberikan sangat bervariatif, tidak hanya berbasis kelas saja tetapi
@@ -39,7 +42,8 @@ import Header from '../components/Header.vue';
               pengembangan diri, kepemimpinan, dan juga kemandirian berupa kewirausahaan dan keterampilan lainnya.
               Dengan demikian nantinya para alumnus pesantren memiliki kepribadian dan pengetahuan yang matang, sehingga
               lulusan pesantren mempunyai daya bersaing yang tinggi. <br><br>
-              Dan Alhamdulillah para alumnus Pesantren Entrepreneur Miftahul Falah sudah banyak yang diterima di tingkat
+              Dan Alhamdulillah para alumnus Yayasan Pendidikan
+              Miftahul Falah sudah banyak yang diterima di tingkat
               perguruan tinggi baik di dalam maupun luar negeri, bahkan diantaranya mendapatkan beasiswa.
             </p>
             <div class="grid grid-cols-2 gap-4">

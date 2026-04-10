@@ -11,9 +11,9 @@
           <img src="/logo.jpg" class="rounded-full" alt="">
         </div>
         <div>
-          <h1 class="text-sm md:text-lg font-bold leading-tight uppercase tracking-wider">Miftahul Falah</h1>
-          <p class="text-[8px] md:text-[10px] text-secondary font-medium tracking-[0.2em] uppercase">Pesantren
-            Entreprenuer
+          <h1 class="text-sm md:text-lg font-bold leading-tight uppercase tracking-wider">YPMF</h1>
+          <p class="text-[8px] md:text-[10px] text-secondary font-medium tracking-[0.2em] uppercase">Yayasan Pendidikan
+            Miftahul Falah
           </p>
         </div>
       </div>
@@ -30,12 +30,12 @@
           </button>
           <div class="dropdown-menu absolute hidden pt-4 w-48">
             <div class="bg-white text-primary rounded-lg shadow-xl overflow-hidden py-2 border-t-4 border-secondary">
-              <router-link to="/sekilas" class="block px-4 py-2 hover:bg-accent transition">Sekolas</router-link>
+              <router-link to="/sekilas" class="block px-4 py-2 hover:bg-accent transition">Sekilas</router-link>
               <router-link to="/tahfizh-quran" class="block px-4 py-2 hover:bg-accent transition">Tahfizh
                 Quran</router-link>
-              <router-link to="/fasilitas" class="block px-4 py-2 hover:bg-accent transition">Fasilitas</router-link>
+              <router-link to="/fasilitas" class="block px-4 py-2 hover:bg-accent transition">Bahasa Arab</router-link>
               <router-link to="/extrakurikuler"
-                class="block px-4 py-2 hover:bg-accent transition">Extrakurikuler</router-link>
+                class="block px-4 py-2 hover:bg-accent transition">Entrepreneurship</router-link>
             </div>
           </div>
         </div>
