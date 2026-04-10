@@ -17,7 +17,7 @@
                     <h4 class="text-secondary font-bold tracking-widest uppercase text-xs mb-2">Tentang Kami</h4>
                     <h2 class="text-2xl md:text-4xl font-serif text-primary mb-6">Sejarah & Filosofi YPMF</h2>
                     <p class="text-slate-600 text-sm md:text-base mb-6 leading-relaxed">
-                        Pesantren Entrepreneur Miftahul Falah adalah lembaga pesantren yang tidak hanya fokus pada pendidikan
+                       Yayasan Pendidikan Miftahul Falah adalah lembaga pesantren yang tidak hanya fokus pada pendidikan
               berbasis agama saja, tapi juga berfokus pada pengembangan diri para santri dalam hal kepribadian, akhlaq
               dan juga jiwa kemandirian para santri.
                     </p>
