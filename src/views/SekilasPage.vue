@@ -29,22 +29,11 @@ import Header from '../components/Header.vue';
             <h4 class="text-secondary font-bold tracking-widest uppercase text-xs mb-2">Tentang Kami</h4>
             <h2 class="text-2xl md:text-4xl font-serif text-primary mb-6">Sejarah & Filosofi Al-Hikmah</h2>
             <p class="text-slate-600 text-sm md:text-base mb-6 leading-relaxed">
-              Yayasan Pendidikan
-              Miftahul Falah adalah lembaga pesantren yang tidak hanya fokus pada pendidikan
-              berbasis agama saja, tapi juga berfokus pada pengembangan diri para santri dalam hal kepribadian, akhlaq
-              dan juga jiwa kemandirian para santri. <br><br>
-              Yayasan Pendidikan
-              Miftahul Falah terletak di area perbukitan Cianjur, di lingkungan yang memiliki
-              udara yang masih segar dan jauh dari keramaian sehingga kondisi yang demikian sangat mendukung bagi proses
-              belajar dan pengembangan diri anak. <br><br>
-              Selain itu metoda pembelajaran yang diberikan sangat bervariatif, tidak hanya berbasis kelas saja tetapi
-              juga berbasis praktik lapangan. Para santri tidak hanya dibekali pengetahuan agama saja, tapi juga
-              pengembangan diri, kepemimpinan, dan juga kemandirian berupa kewirausahaan dan keterampilan lainnya.
-              Dengan demikian nantinya para alumnus pesantren memiliki kepribadian dan pengetahuan yang matang, sehingga
-              lulusan pesantren mempunyai daya bersaing yang tinggi. <br><br>
-              Dan Alhamdulillah para alumnus Yayasan Pendidikan
-              Miftahul Falah sudah banyak yang diterima di tingkat
-              perguruan tinggi baik di dalam maupun luar negeri, bahkan diantaranya mendapatkan beasiswa.
+              YPMF didirikan dengan tujuan untuk berpartisipasi dalam pembentukan manusia Indonesia yang unggul dalam
+              ilmu yang bermanfaat kepada masyarakat, bertaqwa kepada Allah S.W.T. serta berkepribadian mandiri.
+              <br><br>
+              Pendirian YPMF telah dibakukan dihadapan Notaris H.Asmawel Amin S.H. dengan Akta No.75 tanggal 22 Maret
+              1999 dan didaftarkan di Pengadilan Negeri Jakarta Pusat pada tanggal 25 Mei 1999 dibawah No.96.1999.
             </p>
             <div class="grid grid-cols-2 gap-4">
               <div class="bg-white p-4 rounded-xl border-l-4 border-secondary shadow-sm">
@@ -56,7 +45,51 @@ import Header from '../components/Header.vue';
                 <p class="text-[10px] text-slate-500 uppercase">Asatidzah</p>
               </div>
             </div>
+
           </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-20 bg-accent/30">
+      <div class="container mx-auto px-4 text-center">
+        <div class="mb-16 reveal">
+          <h2 class="text-secondary font-bold text-xs uppercase tracking-widest mb-4">Cita-cita Kami</h2>
+          <h3 class="text-3xl md:text-4xl font-serif text-primary">Pendidikan dan Pembiayaan</h3>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+          <div class="bg-green-100 border border-white/10 p-10 rounded-3xl backdrop-blur-md">
+            <h3 class="text-2xl font-bold text-primary mb-4">Pengajian Anak SD & SMP</h3>
+            <p>
+              Pengajian bagi anak-anak usia SD dan SLTP dari daerah sekitar Desa Sukamahi, Kec Sukaresmi, yang telah
+              terlaksana sejak Oktober 1999.
+            </p>
+          </div>
+          <div class="bg-green-100 border border-white/10 p-10 rounded-3xl backdrop-blur-md">
+            <h3 class="text-2xl font-bold text-primary mb-4">Pengajian dan Pelatihan</h3>
+            <p>
+              Pengajian dan peningkatan keterampilan dalam bentuk ceramah dan pelatihan bagi masyarakat sekitar Desa
+              Sukamahi, Kec Sukaresmi, untuk menunjang kemampuan daerah tersebut.
+            </p>
+
+          </div>
+          <div class="bg-green-100 border border-white/10 p-10 rounded-3xl backdrop-blur-md">
+            <h3 class="text-2xl font-bold text-primary mb-4">Pendidikan Santri</h3>
+            <p>Pendidikan Santri, bagi putra-putra Indonesia Muslim terpilih, yang akan dididik agar berkemampuan
+              sebagai Dai' sekaligus sebagai penyuluh Agro (Pertanian dan Perikanan) yang mampu berdiri sendiri.</p>
+
+          </div>
+          <div class="bg-green-100 border border-white/10 p-10 rounded-3xl backdrop-blur-md">
+            <h3 class="text-2xl font-bold text-primary mb-4">Wisata Rohani</h3>
+            <p>
+              Wisata Rohani, yang menyediakan fasilitas peristirahatan sekaligus pendamping / pembimbing kerohanian bagi
+              para tenaga-tenaga Eksekutif / Profesional yang ingin memperdalam pengetahuan agama disela-sela
+              kesibukannya sehari-hari.
+            </p>
+
+          </div>
+
         </div>
       </div>
     </section>
@@ -81,8 +114,8 @@ import Header from '../components/Header.vue';
               </svg>
             </div>
             <h4 class="text-secondary font-bold uppercase tracking-widest text-xs mb-4">Visi Kami</h4>
-            <p class="text-lg font-serif italic leading-relaxed">"Menjadi lembaga tarbiyah yang mampu menyiapkan
-              generasi Qur'ani yang berjiwa mandiri."
+            <p class="text-lg font-serif italic leading-relaxed">"Menjadi suatu Lembaga Pendidikan yang dapat mencetak
+              Sumber Daya Manusia yang unggul dalam ilmu, bertaqwa dan mandiri."
             </p>
           </div>
 
@@ -96,13 +129,14 @@ import Header from '../components/Header.vue';
               </svg>
             </div>
             <h4 class="text-secondary font-bold uppercase tracking-widest text-xs mb-4">Misi Kami</h4>
+            <p>
+              Melaksanakan kegiatan pendidikan umat yang Islami, terutama bagi putra dan putri Indonesia, dengan tujuan:
+            </p>
             <ul class="text-xs space-y-4 text-slate-300">
-              <li class="flex items-start"><span class="text-secondary mr-2">•</span> Menyelenggarakan pendidikan
-                tahfidz dan kajian kitab secara mendalam.</li>
-              <li class="flex items-start"><span class="text-secondary mr-2">•</span> Mengintegrasikan kurikulum
-                nasional dengan wawasan global.</li>
-              <li class="flex items-start"><span class="text-secondary mr-2">•</span> Mengembangkan potensi santri
-                melalui program kepemimpinan dan kewirausahaan.</li>
+              <li class="flex items-start"><span class="text-secondary mr-2">•</span> Menjadi Lembaga Pendidikan yang
+                sehat kuat mandiri dan handal.</li>
+              <li class="flex items-start"><span class="text-secondary mr-2">•</span> Membangun Nusa dan Bangsa sesuai
+                Sunnatullah.</li>
             </ul>
           </div>
 
