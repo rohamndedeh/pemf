@@ -85,7 +85,7 @@
         <router-link to="/sekilas" class="text-2xl font-serif text-white hover:text-secondary transition">Tentang
           Kami</router-link>
         <router-link to="/alumni"
-          class="text-2xl font-serif text-white hover:text-secondary transition">Fasilitas</router-link>
+          class="text-2xl font-serif text-white hover:text-secondary transition">Alumni</router-link>
         <router-link to="/tahfizh-quran" class="text-2xl font-serif text-white hover:text-secondary transition">Tahfizh
           Quran</router-link>
         <router-link to="/kemandirian"

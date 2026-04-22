@@ -129,6 +129,10 @@ onMounted(() => {
 
     if (currentStep === totalSteps) {
       $('#nextBtn').text('Submit Pendaftaran').addClass('bg-secondary !text-primary shadow-secondary/20');
+      setTimeout(() => {
+        $('#nextBtn').attr('type', 'submit');
+      }, 2000);
+
     } else {
       $('#nextBtn').text('Berikutnya').removeClass('bg-secondary !text-primary shadow-secondary/20');
     }

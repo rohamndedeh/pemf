@@ -58,15 +58,12 @@ import Header from '../components/Header.vue';
           <!-- Person 1 -->
           <div class="reveal">
             <div class="group relative overflow-hidden rounded-2xl mb-6 shadow-xl">
-              <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&q=80&w=400"
-                alt="Pimpinan"
+              <img src="https://community.quranmemo.com/public/assets/images/avatar/default_male.png" alt="Pimpinan"
                 class="w-full h-80 object-cover grayscale group-hover:grayscale-0 transition duration-700">
               <div
                 class="absolute inset-0 bg-gradient-to-t from-primary via-transparent to-transparent opacity-0 group-hover:opacity-90 transition duration-500">
               </div>
-              <div
-                class="absolute bottom-6 left-0 right-0 p-4 text-white translate-y-8 group-hover:translate-y-0 transition duration-500">
-                <p class="text-xs uppercase font-bold text-secondary mb-2">Pimpinan Pesantren</p>
+              <div class="absolute bottom-6 left-0 right-0 p-4 text-white ">
                 <h4 class="text-lg font-serif"> Muhammad Naim, S.Mn.</h4>
               </div>
             </div>
@@ -80,15 +77,13 @@ import Header from '../components/Header.vue';
           <!-- Person 2 -->
           <div class="reveal" style="transition-delay: 0.1s;">
             <div class="group relative overflow-hidden rounded-2xl mb-6 shadow-xl">
-              <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=400"
-                alt="Pimpinan"
+              <img src="https://community.quranmemo.com/public/assets/images/avatar/default_male.png" alt="Pimpinan"
                 class="w-full h-80 object-cover grayscale group-hover:grayscale-0 transition duration-700">
               <div
                 class="absolute inset-0 bg-gradient-to-t from-primary via-transparent to-transparent opacity-0 group-hover:opacity-90 transition duration-500">
               </div>
-              <div
-                class="absolute bottom-6 left-0 right-0 p-4 text-white translate-y-8 group-hover:translate-y-0 transition duration-500">
-                <p class="text-xs uppercase font-bold text-secondary mb-2">Direktur Pendidikan</p>
+              <div class="absolute bottom-6 left-0 right-0 p-4 text-white ">
+
                 <h4 class="text-lg font-serif">Ust. Dr. Salman Al-Faris</h4>
               </div>
             </div>
@@ -102,15 +97,13 @@ import Header from '../components/Header.vue';
           <!-- Person 3 -->
           <div class="reveal" style="transition-delay: 0.2s;">
             <div class="group relative overflow-hidden rounded-2xl mb-6 shadow-xl">
-              <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&q=80&w=400"
-                alt="Pimpinan"
+              <img src="https://community.quranmemo.com/public/assets/images/avatar/default_male.png" alt="Pimpinan"
                 class="w-full h-80 object-cover grayscale group-hover:grayscale-0 transition duration-700">
               <div
                 class="absolute inset-0 bg-gradient-to-t from-primary via-transparent to-transparent opacity-0 group-hover:opacity-90 transition duration-500">
               </div>
-              <div
-                class="absolute bottom-6 left-0 right-0 p-4 text-white translate-y-8 group-hover:translate-y-0 transition duration-500">
-                <p class="text-xs uppercase font-bold text-secondary mb-2">Sekretaris Jenderal</p>
+              <div class="absolute bottom-6 left-0 right-0 p-4 text-white ">
+
                 <h4 class="text-lg font-serif">Ust. Hamdan Ma'ruf</h4>
               </div>
             </div>
@@ -124,15 +117,14 @@ import Header from '../components/Header.vue';
           <!-- Person 4 -->
           <div class="reveal" style="transition-delay: 0.3s;">
             <div class="group relative overflow-hidden rounded-2xl mb-6 shadow-xl">
-              <img src="https://images.unsplash.com/photo-1463453091185-61582044d556?auto=format&fit=crop&q=80&w=400"
-                alt="Pimpinan"
+              <img src="https://community.quranmemo.com/public/assets/images/avatar/default_male.png" alt="Pimpinan"
                 class="w-full h-80 object-cover grayscale group-hover:grayscale-0 transition duration-700">
               <div
                 class="absolute inset-0 bg-gradient-to-t from-primary via-transparent to-transparent opacity-0 group-hover:opacity-90 transition duration-500">
               </div>
               <div
                 class="absolute bottom-6 left-0 right-0 p-4 text-white translate-y-8 group-hover:translate-y-0 transition duration-500">
-                <p class="text-xs uppercase font-bold text-secondary mb-2">Bendahara Umum</p>
+
                 <h4 class="text-lg font-serif">Ust. Syarifuddin</h4>
               </div>
 

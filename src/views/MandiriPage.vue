@@ -12,7 +12,7 @@ import Header from '../components/Header.vue';
       <div class="container mx-auto px-4">
         <div class="flex flex-col lg:flex-row items-center gap-10 md:gap-16">
           <div class="w-full lg:w-1/2 relative">
-            <img src="/foto/1.jpg" alt="Kyai" class="rounded-2xl shadow-xl relative z-10 border-4 border-white w-full">
+            <img src="/foto/7.jpg" alt="Kyai" class="rounded-2xl shadow-xl relative z-10 border-4 border-white w-full">
             <div
               class="hidden md:block absolute -bottom-6 -right-6 bg-primary p-6 rounded-xl shadow-xl z-20 text-white border-b-4 border-secondary max-w-xs">
               <p class="text-secondary font-serif italic text-lg">"Ilmu tanpa adab seperti api tanpa kayu bakar."</p>
@@ -25,8 +25,8 @@ import Header from '../components/Header.vue';
             </div>
           </div>
           <div class="w-full lg:w-1/2">
-            <h4 class="text-secondary font-bold tracking-widest uppercase text-xs mb-2">Tentang Kami</h4>
-            <h2 class="text-2xl md:text-4xl font-serif text-primary mb-6">Sejarah & Filosofi Al-Hikmah</h2>
+            <h4 class="text-secondary font-bold tracking-widest uppercase text-xs mb-2">Pesantren Mandiri</h4>
+            <h2 class="text-2xl md:text-4xl font-serif text-primary mb-6">Kemandirian Santri dan Pesantren</h2>
             <p class="text-slate-600 text-sm md:text-base mb-6 leading-relaxed">
               Pesantren Entrepreneur Miftahul Falah adalah lembaga pesantren yang tidak hanya fokus pada pendidikan
               berbasis agama saja, tapi juga berfokus pada pengembangan diri para santri dalam hal kepribadian, akhlaq

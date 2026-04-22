@@ -104,7 +104,43 @@ onMounted(() => {
   <div>
     <Hero />
     <About />
+    <section class="py-20 bg-white">
+      <div class="container mx-auto px-4 text-center">
+        <h2 class="text-4xl font-serif text-primary mb-16">Penerimaan Santri Baru TA 2026/2027</h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-12">
+          <div class="group">
+            <div class="relative mb-6">
+              <div class="absolute inset-0 bg-secondary rounded-2xl transform rotate-3 group-hover:rotate-6 transition">
+              </div>
+              <img src="/foto/23.jpeg" alt="Ustadz"
+                class="relative z-10 w-full object-cover rounded-2xl grayscale group-hover:grayscale-0 transition duration-500">
+            </div>
+
+          </div>
+          <div class="group">
+            <div class="relative mb-6">
+              <div class="absolute inset-0 bg-secondary rounded-2xl transform rotate-3 group-hover:rotate-6 transition">
+              </div>
+              <img src="/foto/22.jpeg" alt="Ustadz"
+                class="relative z-10 w-full object-cover rounded-2xl grayscale group-hover:grayscale-0 transition duration-500">
+            </div>
+
+          </div>
+
+
+        </div>
+        <div class="text-center mt-32">
+          <a href="https://wa.me/6281546483008?text=Assalamualaikum%20Saya%20ingin%20mendaftar%20sebagai%20santri%20di%20Yayasan%20Pesantren%20Miftahul%20Falah.%20Mohon%20informasi%20lebih%20lanjut."
+            target="_blank"
+            class="bg-secondary hover:bg-yellow-600 text-primary font-bold px-10 py-5 rounded-full transition duration-300">
+            Tanya PPDB
+          </a>
+        </div>
+      </div>
+    </section>
     <Fasilitas />
+
     <Aktivitas />
     <Guru />
 
