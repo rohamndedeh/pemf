@@ -98,11 +98,11 @@ import Header from '../components/Header.vue';
       <div class="container mx-auto px-4">
         <div class="text-center mb-16 reveal">
           <h2 class="text-secondary font-bold text-xs uppercase tracking-widest mb-4">Arah & Tujuan</h2>
-          <h3 class="text-3xl md:text-4xl font-serif">Visi, Misi & Moto</h3>
+          <h3 class="text-3xl md:text-4xl font-serif">Visi & Misi</h3>
           <div class="w-20 h-1 bg-secondary mx-auto mt-6"></div>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
           <!-- Visi Card -->
           <div class="bg-white/5 border border-white/10 p-10 rounded-3xl backdrop-blur-md reveal">
             <div class="w-12 h-12 bg-secondary rounded-xl flex items-center justify-center text-primary mb-8 shadow-lg">
@@ -141,20 +141,7 @@ import Header from '../components/Header.vue';
           </div>
 
           <!-- Moto Card -->
-          <div class="bg-white/5 border border-white/10 p-10 rounded-3xl backdrop-blur-md reveal">
-            <div class="w-12 h-12 bg-secondary rounded-xl flex items-center justify-center text-primary mb-8 shadow-lg">
-              <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
-                <path fill-rule="evenodd"
-                  d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z"
-                  clip-rule="evenodd" />
-              </svg>
-            </div>
-            <h4 class="text-secondary font-bold uppercase tracking-widest text-xs mb-4">Moto Perjuangan</h4>
-            <div class="text-center py-6">
-              <h5 class="text-2xl font-serif text-secondary mb-2 uppercase tracking-widest">Al-Khidmah</h5>
-              <p class="text-[10px] text-white/60 tracking-widest uppercase">Berkhidmat, Berilmu, Beradab</p>
-            </div>
-          </div>
+
         </div>
       </div>
     </section>
@@ -164,7 +151,7 @@ import Header from '../components/Header.vue';
       <div class="container mx-auto px-4 text-center">
         <div class="mb-16 reveal">
           <h2 class="text-secondary font-bold text-xs uppercase tracking-widest mb-4">Struktur Kepemimpinan</h2>
-          <h3 class="text-3xl md:text-4xl font-serif text-primary">Dewan Pengasuh & Pimpinan</h3>
+          <h3 class="text-3xl md:text-4xl font-serif text-primary">Dewan Pengawas, Pembina & Pengelola</h3>
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
@@ -195,6 +182,58 @@ import Header from '../components/Header.vue';
             </div>
 
           </div>
+
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 mt-10">
+          <div class="bg-green-100 border border-white/10 p-10 rounded-3xl backdrop-blur-md">
+            <h3 class="text-2xl font-bold text-primary mb-4">Dewan Pengawas</h3>
+            <ul>
+              <li>
+                Bpk. Rizky Budinanda
+              </li>
+              <li>
+                Bpk. H. Bagus Hernowo
+              </li>
+              <li>
+                ⁠Bpk. H. Robbyantono
+              </li>
+            </ul>
+          </div>
+          <div class="bg-green-100 border border-white/10 p-10 rounded-3xl backdrop-blur-md">
+            <h3 class="text-2xl font-bold text-primary mb-4">Dewan Pembina</h3>
+            <ul>
+              <li>
+                Bpk. H. Syahabudin AR
+              </li>
+              <li>
+                Bpk. Syaiful
+              </li>
+
+            </ul>
+          </div>
+          <div class="bg-green-100 border border-white/10 p-10 rounded-3xl backdrop-blur-md">
+            <h3 class="text-2xl font-bold text-primary mb-4">Dewan Pengelola</h3>
+            <ul>
+              <li>
+                Ketua :
+                A. Setiawan
+
+              </li>
+              <li>
+                Sekretaris:
+                Khairulhuda
+
+              </li>
+              <li>
+                Bendahara:
+                H. Sayuti
+              </li>
+
+            </ul>
+
+
+          </div>
+
 
         </div>
       </div>

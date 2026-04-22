@@ -53,10 +53,10 @@
           <button class="text-xs hover:text-secondary">EN</button>
         </div>
 
-        <a href="#pendaftaran"
+        <router-link to="/pendaftaran"
           class="bg-secondary hover:bg-yellow-600 text-primary font-bold px-6 py-2 rounded-full transition duration-300">
           Daftar
-        </a>
+        </router-link>
       </div>
 
       <!-- Mobile Toggle -->
@@ -99,9 +99,10 @@
           <button class="text-white/60">ENGLISH</button>
         </div>
 
-        <a href="#pendaftaran" class="bg-secondary text-primary font-bold py-4 rounded-xl text-xl shadow-lg mt-4">
+        <router-link to="/pendaftaran"
+          class="bg-secondary text-primary font-bold py-4 rounded-xl text-xl shadow-lg mt-4">
           Daftar Sekarang
-        </a>
+        </router-link>
       </nav>
     </div>
   </div>

@@ -17,9 +17,11 @@
                     <h4 class="text-secondary font-bold tracking-widest uppercase text-xs mb-2">Tentang Kami</h4>
                     <h2 class="text-2xl md:text-4xl font-serif text-primary mb-6">Sejarah & Filosofi YPMF</h2>
                     <p class="text-slate-600 text-sm md:text-base mb-6 leading-relaxed">
-                       Yayasan Pendidikan Miftahul Falah adalah lembaga pesantren yang tidak hanya fokus pada pendidikan
-              berbasis agama saja, tapi juga berfokus pada pengembangan diri para santri dalam hal kepribadian, akhlaq
-              dan juga jiwa kemandirian para santri.
+                      YPMF didirikan dengan tujuan untuk berpartisipasi dalam pembentukan manusia Indonesia yang unggul dalam
+              ilmu yang bermanfaat kepada masyarakat, bertaqwa kepada Allah S.W.T. serta berkepribadian mandiri.
+              <br><br>
+              Pendirian YPMF telah dibakukan dihadapan Notaris H.Asmawel Amin S.H. dengan Akta No.75 tanggal 22 Maret
+              1999 dan didaftarkan di Pengadilan Negeri Jakarta Pusat pada tanggal 25 Mei 1999 dibawah No.96.1999.
                     </p>
                     <div class="grid grid-cols-3 gap-4">
                         <div class="bg-white p-4 rounded-xl border-l-4 border-secondary shadow-sm">

@@ -13,6 +13,7 @@ import RegisterPage from '../views/RegisterPage.vue'
 import DashboardPage from '../views/admin/DashboardPage.vue'
 import AdminLayout from '../layouts/AdminLayout.vue'
 import { supabase } from '../utils/supabase'
+import PendaftaranPage from '../views/PendaftaranPage.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -124,6 +125,15 @@ const router = createRouter({
         title: 'Register',
         description: 'Buat akun baru di pondok pesantren kami.',
         hideNavigation: true,
+      },
+    },
+    {
+      path: '/pendaftaran',
+      name: 'Pendaftaran',
+      component: PendaftaranPage,
+      meta: {
+        title: 'Pendaftaran',
+        description: 'Daftar untuk bergabung dengan pondok pesantren kami.',
       },
     },
     {
