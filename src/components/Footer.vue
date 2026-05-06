@@ -17,7 +17,7 @@
                 <div>
                     <h3 class="text-white font-bold mb-4">Peta Lokasi</h3>
                     <div class="h-32 rounded-lg bg-slate-800 overflow-hidden text-[10px] flex items-center justify-center italic opacity-50">
-                        [Google Maps Integration]
+                       <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3962.679503778155!2d107.13864135742188!3d-6.686563968658447!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69ae65101772cd%3A0x5f3ad7473b812b11!2sPesantren%20Entrepreneur%20Miftahul%20Falah%20(PEMF)!5e0!3m2!1sid!2sid!4v1778037528605!5m2!1sid!2sid" width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                 </div>
                  <div>

@@ -39,14 +39,14 @@ async function handleSubmit() {
       const fileName = Date.now() + '-' + file.value.name
 
       const { error: uploadError } = await supabase.storage
-        .from('foto')
+        .from('images')
         .upload(fileName, file.value)
 
       if (uploadError) throw uploadError
 
       // ambil URL
       const { data } = supabase.storage
-        .from('foto')
+        .from('images')
         .getPublicUrl(fileName)
 
       fotoUrl = data.publicUrl
@@ -56,14 +56,14 @@ async function handleSubmit() {
       const fileNmae = Date.now() + '-' + kk.value.name
 
       const { error: uploadError } = await supabase.storage
-        .from('kk')
+        .from('images')
         .upload(fileNmae, kk.value)
 
       if (uploadError) throw uploadError
 
       // ambil URL
       const { data } = supabase.storage
-        .from('kk')
+        .from('images')
         .getPublicUrl(fileNmae)
 
       kkUrl = data.publicUrl
@@ -169,12 +169,8 @@ onMounted(() => {
         }
       }).then((result) => {
         if (result.isConfirmed) {
-          Swal.fire({
-            title: '<span class="font-serif text-primary">Berhasil Terkirim!</span>',
-            text: 'Nomor pendaftaran akan dikirimkan ke WhatsApp wali santri dalam 1x24 jam.',
-            icon: 'success',
-            confirmButtonColor: '#064e3b'
-          });
+          handleSubmit();
+
           // Optional: Reset form or redirect
         }
       });
@@ -306,7 +302,7 @@ onMounted(() => {
           </div>
 
           <!-- Form Steps -->
-          <form id="regForm" class="p-8 md:p-16" @submit.prevent="handleSubmit">
+          <form id="regForm" class="p-8 md:p-16">
 
             <!-- Step 1: Data Santri -->
             <div class="form-step active" id="step-1">

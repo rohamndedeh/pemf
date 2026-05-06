@@ -85,8 +85,9 @@ import Header from '../components/Header.vue';
           <!-- Google Map -->
           <div class="rounded-3xl overflow-hidden shadow-xl h-64 border-4 border-white">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126915.2281897096!2d106.789155!3d-6.2087634!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNsKwMTInMzEuNSJTIDEwNsKwNDcnMjEuMCJF!5e0!3m2!1sid!2sid!4v1634567891234!5m2!1sid!2sid"
-              width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3962.679503778155!2d107.13864135742188!3d-6.686563968658447!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69ae65101772cd%3A0x5f3ad7473b812b11!2sPesantren%20Entrepreneur%20Miftahul%20Falah%20(PEMF)!5e0!3m2!1sid!2sid!4v1778037528605!5m2!1sid!2sid"
+              width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
           </div>
         </div>
 
